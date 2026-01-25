@@ -4,7 +4,16 @@
     "@release-it/conventional-changelog": {
       "infile": "CHANGELOG.md",
       "preset": {
-        "name": "conventionalcommits"
+        "name": "conventionalcommits",
+        "types": [
+          { "type": "feat", "section": "✨ Added" },
+          { "type": "fix", "section": "🐛 Fixed" },
+          { "type": "refactor", "section": "🔨 Changed" },
+          { "type": "style", "section": "🎨 Updated" },
+          { "type": "perf", "section": "⚡ Improved" },
+          { "type": "docs", "section": "📝 Documentation" },
+          { "type": "chore", "hidden": true }
+        ]
       }
     }
   },
