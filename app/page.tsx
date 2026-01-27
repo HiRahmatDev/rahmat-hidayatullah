@@ -30,7 +30,6 @@ export default function Home() {
                 src={heroImage}
                 alt="Ilustrasi Cowok Ngopi"
                 placeholder="blur"
-                className="w-full"
               />
             </div>
           </div>
