@@ -1,11 +1,11 @@
 export function Socials() {
   return (
-    <div className="flex gap-6 w-fit -mx-1">
+    <div className="flex gap-5 sm:gap-6 w-fit -mx-1">
       <a
         href="https://www.youtube.com/ahmadalhidayah"
         target="_blank"
         rel="noopener noreferrer"
-        className="p-1 active:scale-90 transition-transform duration-100 hover:[&_svg]:fill-primary-green [&_svg]:transition-colors [&_svg]:duration-200"
+        className="p-1 select-none active:scale-90 transition-transform ease-[cubic-bezier(0.277,0.836,0,1)] hover:[&_svg]:fill-primary-green [&_svg]:transition-colors [&_svg]:duration-200"
       >
         <YoutubeIcon />
       </a>
@@ -13,7 +13,7 @@ export function Socials() {
         href="https://www.instagram.com/hirahmat_"
         target="_blank"
         rel="noopener noreferrer"
-        className="p-1 active:scale-90 transition-transform duration-100 hover:[&_svg]:text-primary-green [&_svg]:transition-colors [&_svg]:duration-200"
+          className="p-1 select-none active:scale-90 transition-transform ease-[cubic-bezier(0.277,0.836,0,1)] duration-200 hover:[&_svg]:text-primary-green [&_svg]:transition-colors [&_svg]:duration-200"
       >
         <InstagramIcon />
       </a>
@@ -21,7 +21,7 @@ export function Socials() {
         href="https://wa.me/6281316123639"
         target="_blank"
         rel="noopener noreferrer"
-        className="p-1 active:scale-90 transition-transform duration-100 hover:[&_svg]:text-primary-green [&_svg]:transition-colors [&_svg]:duration-200"
+        className="p-1 select-none active:scale-90 transition-transform ease-[cubic-bezier(0.277,0.836,0,1)] duration-200 hover:[&_svg]:text-primary-green [&_svg]:transition-colors [&_svg]:duration-200"
       >
         <WhatsappIcon />
       </a>
@@ -36,7 +36,7 @@ function YoutubeIcon() {
       height="24"
       viewBox="0 0 32 24"
       xmlns="http://www.w3.org/2000/svg"
-      className="fill-primary-green-lighter"
+      className="fill-primary-green-lighter w-[28.77px] h-5.5 sm:w-8 sm:h-6"
     >
       <path d="M29.949 4.87465C29.6067 3.59551 28.5984 2.58809 27.3181 2.24621C24.9975 1.62497 15.6921 1.62497 15.6921 1.62497C15.6921 1.62497 6.3868 1.62497 4.06614 2.24621C2.78585 2.58814 1.77752 3.59551 1.43528 4.87465C0.813477 7.19318 0.813477 12.0305 0.813477 12.0305C0.813477 12.0305 0.813477 16.8679 1.43528 19.1865C1.77752 20.4656 2.78585 21.4311 4.06614 21.773C6.3868 22.3942 15.6921 22.3942 15.6921 22.3942C15.6921 22.3942 24.9975 22.3942 27.3181 21.773C28.5984 21.4311 29.6067 20.4656 29.949 19.1865C30.5708 16.8679 30.5708 12.0305 30.5708 12.0305C30.5708 12.0305 30.5708 7.19318 29.949 4.87465ZM12.6488 16.4225V7.63858L20.4262 12.0307L12.6488 16.4225Z" />
     </svg>
@@ -51,7 +51,7 @@ function InstagramIcon() {
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="text-primary-green-lighter"
+      className="text-primary-green-lighter size-5.5 sm:size-6"
     >
       <path
         d="M17 2.00003H7C4.23858 2.00003 2 4.23861 2 7.00003V17C2 19.7615 4.23858 22 7 22H17C19.7614 22 22 19.7615 22 17V7.00003C22 4.23861 19.7614 2.00003 17 2.00003Z"
@@ -86,7 +86,7 @@ function WhatsappIcon() {
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="text-primary-green-lighter"
+      className="text-primary-green-lighter size-5.5 sm:size-6"
     >
       <path
         d="M19.7588 3.98818C17.6868 1.86798 14.9275 0.701874 11.995 0.701874C5.94233 0.701874 1.01705 5.72976 1.01705 11.9086C1.01705 13.8824 1.52145 15.8108 2.48079 17.5119L0.923096 23.3173L6.74343 21.7574C8.34562 22.6509 10.1506 23.1204 11.9901 23.1204H11.995C18.0428 23.1204 23.0769 18.0925 23.0769 11.9137C23.0769 8.92015 21.8308 6.10836 19.7588 3.98818ZM11.995 21.2324C10.3533 21.2324 8.74617 20.7831 7.34672 19.935L7.0154 19.7331L3.56375 20.657L4.48353 17.2192L4.26595 16.8658C3.35112 15.3817 2.87144 13.6704 2.87144 11.9086C2.87144 6.77471 6.96595 2.5949 12 2.5949C14.438 2.5949 16.7275 3.56413 18.4484 5.32592C20.1693 7.08769 21.2275 9.42495 21.2226 11.9137C21.2226 17.0526 17.0242 21.2324 11.995 21.2324ZM16.9995 14.256C16.7275 14.1146 15.3775 13.4382 15.1253 13.3473C14.8731 13.2514 14.6901 13.206 14.5072 13.4886C14.3242 13.7714 13.8 14.3973 13.6368 14.5891C13.4786 14.7759 13.3154 14.8011 13.0435 14.6598C11.4313 13.837 10.3731 13.1908 9.3099 11.3281C9.02804 10.8334 9.59178 10.8687 10.116 9.79852C10.205 9.61169 10.1604 9.45015 10.0912 9.30883C10.022 9.1675 9.4731 7.78938 9.24562 7.22903C9.0231 6.68385 8.79562 6.75957 8.62749 6.74947C8.46925 6.73938 8.28629 6.73938 8.10331 6.73938C7.92035 6.73938 7.62365 6.81005 7.37144 7.08769C7.11925 7.37038 6.41211 8.04682 6.41211 9.42495C6.41211 10.8031 7.39617 12.1358 7.52969 12.3226C7.66815 12.5093 9.46321 15.3362 12.2176 16.5529C13.9582 17.3201 14.6407 17.3858 15.511 17.2545C16.0401 17.1737 17.133 16.5781 17.3604 15.9218C17.588 15.2655 17.588 14.7052 17.5187 14.5891C17.4544 14.4629 17.2714 14.3923 16.9995 14.256Z"
