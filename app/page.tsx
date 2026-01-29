@@ -1,19 +1,19 @@
 import Image from "next/image";
 
+import { Footer } from "./components/Footer";
 import { Socials } from "./components/Socials";
 import { VisualAccent } from "@/components/VisualAccent";
 import heroImage from "@/assets/ilustrasi-cowok-ngopi.png";
-import { Footer } from "./components/Footer";
 
 export default function Home() {
   return (
     <main>
       <section className="bg-light-green">
         <div className="max-w-300 mx-auto px-4 sm:px-12 pt-10 sm:pt-14 lg:pt-28.5 pb-11 sm:pb-20 lg:pb-30 overflow-hidden">
-          <h1 className="text-[57px]/[0.9] sm:text-[96px]/[0.9] lg:text-9xl/[0.9] tracking-tight font-bold text-primary-green -ml-2 sm:-ml-4 lg:-ml-5 mb-7.5 sm:mb-15 lg:mb-18.5">
+          <h1 className="text-[57px]/[0.9] sm:text-[96px]/[0.9] lg:text-9xl/[0.9] 2xl:text-[150px]/[0.88] tracking-tight 2xl:tracking-[-0.03em] font-bold text-primary-green -ml-2 sm:-ml-4 lg:-ml-6 xl:-ml-8 mb-7.5 sm:mb-15 lg:mb-18.5">
             Rahmat
             <br />{" "}
-            <span className="text-secondary-green ml-2 sm:ml-4 lg:ml-5">
+            <span className="text-secondary-green ml-2 sm:ml-4 lg:ml-5 2xl:ml-6">
               Hidayatullah
             </span>
           </h1>
