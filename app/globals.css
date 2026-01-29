@@ -5,15 +5,19 @@
 @theme {
   --color-*: initial;
   --color-white: #ffffff;
-  --color-primary-green: #55a300;
-  --color-primary-green-lighter: #65c330;
-  --color-secondary-green: #9be472;
-  --color-light-green: #f1f7ea;
-  --color-primary-orange: #fa8112;
+  --color-primary-black: oklch(29.55% 0.06557 130.663);
+  --color-primary-green: oklch(63.974% 0.18638 134.886);
+  --color-primary-green-lighter: oklch(73.153% 0.1992 136.887);
+  --color-secondary-green: oklch(84.571% 0.16442 135.438);
+  --color-light-green: oklch(96.807% 0.01818 127.345);
+  --color-primary-orange: oklch(72.689% 0.17887 53.595);
+}
+
+@theme inline {
+  --font-mono: var(--font-roboto-mono);
+  --font-sans: var(--font-plus-jakarta-sans);
 }
 
 body {
-  @apply bg-white;
-  @apply text-primary-green;
-  font-family: var(--font-plus-jakarta-sans);
+  @apply bg-white text-primary-black font-sans;
 }

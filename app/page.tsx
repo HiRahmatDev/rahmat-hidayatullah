@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Socials } from "./components/Socials";
 import { VisualAccent } from "@/components/VisualAccent";
 import heroImage from "@/assets/ilustrasi-cowok-ngopi.png";
+import { Footer } from "./components/Footer";
 
 export default function Home() {
   return (
@@ -35,6 +36,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </main>
   );
 }
