@@ -1,8 +1,8 @@
-interface YoutubeIconProps {
+interface YoutubeProps {
   className?: string;
 }
 
-export function YoutubeIcon({ className }: YoutubeIconProps) {
+export function Youtube({ className }: YoutubeProps) {
   return (
     <svg
       width="32"

@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { Footer } from "./components/Footer";
+import { NulisAjaDulu } from "./components/NulisAjaDulu";
 import { Socials } from "./components/Socials";
 import { VisualAccent } from "@/components/VisualAccent";
 import heroImage from "@/assets/ilustrasi-cowok-ngopi.png";
@@ -36,7 +37,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      <NulisAjaDulu />
       <Footer />
     </main>
   );

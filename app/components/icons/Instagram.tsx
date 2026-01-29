@@ -1,8 +1,8 @@
-interface InstagramIconProps {
+interface InstagramProps {
   className?: string;
 }
 
-export function InstagramIcon({ className }: InstagramIconProps) {
+export function Instagram({ className }: InstagramProps) {
   return (
     <svg
       width="24"

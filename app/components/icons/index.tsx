@@ -1,3 +1,4 @@
-export { YoutubeIcon } from './YoutubeIcon';
-export { InstagramIcon } from './InstagramIcon';
-export { WhatsappIcon } from './WhatsappIcon';
+export { Youtube } from "./Youtube";
+export { Instagram } from "./Instagram";
+export { Whatsapp } from "./Whatsapp";
+export { ArrowNarrowRight } from "./ArrowNarrowRight";

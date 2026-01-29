@@ -1,8 +1,8 @@
-interface WhatsappIconProps {
+interface WhatsappProps {
   className?: string;
 }
 
-export function WhatsappIcon({ className }: WhatsappIconProps) {
+export function Whatsapp({ className }: WhatsappProps) {
   return (
     <svg
       width="24"
