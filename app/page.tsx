@@ -7,6 +7,8 @@ import { Socials } from "./components/Socials";
 import { VisualAccent } from "@/components/VisualAccent";
 import heroImage from "@/assets/ilustrasi-cowok-ngopi.png";
 
+export const revalidate = 60;
+
 export default function Home() {
   return (
     <main>
