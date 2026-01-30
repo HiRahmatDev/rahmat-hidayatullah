@@ -1,4 +1,5 @@
 import Image from "next/image";
+import React from "react";
 
 import { Footer } from "./components/Footer";
 import { NulisAjaDulu } from "./components/NulisAjaDulu";
@@ -37,7 +38,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <NulisAjaDulu />
+      <React.Suspense fallback={<NulisAjaDulu.Skeleton />}>
+        <NulisAjaDulu />
+      </React.Suspense>
       <Footer />
     </main>
   );
