@@ -74,7 +74,7 @@ export function DynamicElapsedTime({ startDate }: { startDate: Date }) {
         (loading ? " blur-[2.5px]" : "")
       }
     >
-      <span className="text-[13.5px] tracking-tight font-mono font-semibold">
+      <span className="text-[13.5px] tracking-tight font-mono font-semibold text-primary-black/70">
         {elapsedValue}
       </span>{" "}
       {currentUnit}

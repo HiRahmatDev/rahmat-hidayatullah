@@ -26,7 +26,7 @@ export async function NulisAjaDulu() {
                 href={journal.slug ? `/${journal.slug}` : "#"}
                 className="bg-light-green/60 hover:bg-light-green p-4 sm:p-8 rounded-3xl flex flex-col sm:flex-row gap-3 sm:gap-8 items-start ease-[--ease-silky] active:scale-[98.75%] md:active:scale-[99%] lg:active:scale-[99.25%] xl:active:scale-[99.45%] transition-transform duration-150"
               >
-                <p className="text-primary-green/40 italic font-bold text-right text-sm/normal sm:text-base/[1] tracking-tight sm:mt-1">
+                <p className="text-primary-green-lighter/40 italic font-bold text-right text-sm/normal sm:text-base/[1] tracking-tight sm:mt-1">
                   <span className="sm:text-[28px] sm:tracking-[-1.5px]">
                     {year}
                   </span>
@@ -37,10 +37,10 @@ export async function NulisAjaDulu() {
                   </span>
                 </p>
                 <div className="flex-1">
-                  <h3 className="w-fit font-bold text-lg/tight sm:text-2xl/tight mb-1">
+                  <h3 className="w-fit font-bold text-lg/tight sm:text-2xl/tight mb-1 sm:mb-1.5">
                     {journal.name}
                   </h3>
-                  <p className="font-medium text-base/normal sm:text-xl/normal text-secondary-black line-clamp-2">
+                  <p className="text-base/normal sm:text-xl/normal text-primary-black/75 line-clamp-2">
                     {journal.excerpt}
                   </p>
                 </div>
