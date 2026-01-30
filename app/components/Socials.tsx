@@ -7,7 +7,7 @@ const SOCIAL_LINK_CLASS =
 export function Socials() {
   return (
     <nav
-      className="flex gap-4 sm:gap-6 w-fit -mx-1"
+      className="flex gap-3 sm:gap-6 w-fit -mx-1"
       aria-label="Social media links"
     >
       <a

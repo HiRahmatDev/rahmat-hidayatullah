@@ -8,12 +8,12 @@ export async function NulisAjaDulu() {
 
   return (
     <section>
-      <div className="max-w-300 mx-auto px-6 sm:px-12 pt-10 sm:pt-14 lg:pt-28.5 pb-14 sm:pb-20 lg:pb-30">
+      <div className="max-w-300 mx-auto px-7 sm:px-12 pt-10 sm:pt-14 lg:pt-28.5 pb-14 sm:pb-20 lg:pb-30">
         <VisualAccent variant="secondary" />
-        <p className="text-[28px]/normal sm:text-4xl/normal -tracking-[.1px] font-bold mt-3 sm:mt-4 mb-6 sm:mb-8">
+        <p className="text-2xl/tight sm:text-4xl/tight -tracking-[.1px] font-bold mt-3 sm:mt-4 mb-4 sm:mb-8">
           <em className="text-primary-green">Nulis</em> aja dulu.
         </p>
-        <div className="space-y-4 -mx-3">
+        <div className="space-y-4 -mx-4">
           {journals.map((journal) => {
             const createdDate = new Date(journal.createdTime);
             const year = createdDate.getFullYear();
@@ -24,9 +24,9 @@ export async function NulisAjaDulu() {
               <Link
                 key={journal.pageId}
                 href={journal.slug ? `/${journal.slug}` : "#"}
-                className="bg-light-green/60 hover:bg-light-green p-4 sm:p-8 rounded-3xl flex flex-col sm:flex-row gap-2 sm:gap-8 items-start ease-[--ease-silky] active:scale-[98.75%] md:active:scale-[99%] lg:active:scale-[99.25%] xl:active:scale-[99.45%] transition-transform duration-150"
+                className="bg-light-green/60 hover:bg-light-green p-4 sm:p-8 rounded-3xl flex flex-col sm:flex-row gap-3 sm:gap-8 items-start ease-[--ease-silky] active:scale-[98.75%] md:active:scale-[99%] lg:active:scale-[99.25%] xl:active:scale-[99.45%] transition-transform duration-150"
               >
-                <p className="text-secondary-green italic font-bold text-right text-sm/normal sm:text-base/[1] tracking-tight sm:mt-1">
+                <p className="text-primary-green/40 italic font-bold text-right text-sm/normal sm:text-base/[1] tracking-tight sm:mt-1">
                   <span className="sm:text-[28px] sm:tracking-[-1.5px]">
                     {year}
                   </span>
@@ -37,7 +37,7 @@ export async function NulisAjaDulu() {
                   </span>
                 </p>
                 <div className="flex-1">
-                  <h3 className="w-fit font-bold text-xl/tight sm:text-2xl/tight mb-2">
+                  <h3 className="w-fit font-bold text-lg/tight sm:text-2xl/tight mb-1">
                     {journal.name}
                   </h3>
                   <p className="font-medium text-base/normal sm:text-xl/normal text-secondary-black line-clamp-2">
@@ -56,12 +56,12 @@ export async function NulisAjaDulu() {
 function Skeleton() {
   return (
     <section>
-      <div className="max-w-300 mx-auto px-4 sm:px-12 pt-10 sm:pt-14 lg:pt-28.5 pb-14 sm:pb-20 lg:pb-30">
+      <div className="max-w-300 mx-auto px-7 sm:px-12 pt-10 sm:pt-14 lg:pt-28.5 pb-14 sm:pb-20 lg:pb-30">
         <VisualAccent variant="secondary" />
-        <p className="text-[28px]/normal sm:text-4xl/normal -tracking-[.1px] font-bold mt-3 sm:mt-4 mb-6 sm:mb-8">
+        <p className="text-2xl/normal sm:text-4xl/normal -tracking-[.1px] font-bold mt-3 sm:mt-4 mb-6 sm:mb-8">
           <em className="text-primary-green">Nulis</em> aja dulu.
         </p>
-        <div className="space-y-4">
+        <div className="space-y-4 -mx-4">
           {[...Array(3)].map((_, idx) => (
             <div
               key={idx}
