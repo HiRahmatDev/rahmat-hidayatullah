@@ -1,6 +1,6 @@
 # rahmathidayatullah.com – Personal Blog & Journal
 
-Website ini adalah jurnal pribadi sekaligus portofolio digital saya. Dibangun dengan **Next.js**, situs ini menjadi wadah untuk menyimpan cerita sederhana, catatan tentang hidup, dan eksplorasi tentang apa saja.
+Website ini adalah jurnal pribadi. Situs ini menjadi wadah untuk menyimpan cerita sederhana, catatan tentang hidup, dan eksplorasi tentang apa saja.
 
 ## ✨ Filosofi Proyek
 
