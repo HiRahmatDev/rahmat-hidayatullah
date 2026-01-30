@@ -23,7 +23,7 @@ export async function NulisAjaDulu() {
             return (
               <Link
                 key={journal.pageId}
-                href="#"
+                href={journal.slug ? `/${journal.slug}` : "#"}
                 className="bg-light-green/60 hover:bg-light-green p-4 sm:p-8 rounded-3xl flex flex-col sm:flex-row gap-2 sm:gap-8 items-start ease-[--ease-silky] active:scale-[98.75%] md:active:scale-[99%] lg:active:scale-[99.25%] xl:active:scale-[99.45%] transition-transform duration-150"
               >
                 <p className="text-secondary-green italic font-bold text-right text-sm/normal sm:text-base/[1] tracking-tight sm:mt-1">
