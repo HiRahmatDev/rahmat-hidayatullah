@@ -27,7 +27,7 @@ export default async function DetailPage({ params }: DetailPageProps) {
     <main>
       <section></section>
       <article>
-        <div className="max-w-204 mx-auto px-4 sm:px-12 pt-6 sm:pt-10 pb-12 sm:pb-20">
+        <div className="max-w-204 mx-auto px-6 sm:px-12 pt-6 sm:pt-10 pb-12 sm:pb-20">
           <NotionRenderer listBlockChildren={listBlockChildren} />
         </div>
       </article>
