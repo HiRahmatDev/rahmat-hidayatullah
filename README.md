@@ -14,7 +14,7 @@ Sesuai dengan tagline-nya, **"Nulis aja dulu"**, situs ini mengutamakan kejujura
 
 - ⚡ **Next.js** – Framework utama untuk performa dan SEO.
 - 🎨 **Tailwind CSS** – Untuk sistem desain yang konsisten dan responsif.
-- 💫 **GSAP & Framer Motion** – Menghidupkan elemen melalui transisi yang halus.
+- 💫 **GSAP & Motion (Formerly Framer Motion)** – Menghidupkan elemen melalui transisi yang halus.
 - 🔧 **TypeScript** – Memastikan kode yang aman dan terstruktur.
 - 🚀 **Vercel** – Platform deployment untuk kecepatan akses global.
 
