@@ -17,7 +17,7 @@ export function Socials() {
         className={SOCIAL_LINK_CLASS}
         aria-label="Visit my YouTube channel"
       >
-        <Youtube className="text-primary-green-lighter w-[28.77px] h-5.5 sm:w-8 sm:h-6" />
+        <Youtube className="text-primary-green-lighter w-[26.67px] h-5 sm:w-8 sm:h-6" />
       </a>
       <a
         href={SOCIAL_LINKS.instagram}
@@ -26,7 +26,7 @@ export function Socials() {
         className={SOCIAL_LINK_CLASS}
         aria-label="Follow me on Instagram"
       >
-        <Instagram className="text-primary-green-lighter size-5.5 sm:size-6" />
+        <Instagram className="text-primary-green-lighter size-5 sm:size-6" />
       </a>
       <a
         href={SOCIAL_LINKS.whatsapp}
@@ -35,7 +35,7 @@ export function Socials() {
         className={SOCIAL_LINK_CLASS}
         aria-label="Contact me on WhatsApp"
       >
-        <Whatsapp className="text-primary-green-lighter size-5.5 sm:size-6" />
+        <Whatsapp className="text-primary-green-lighter size-5 sm:size-6" />
       </a>
     </nav>
   );
