@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-import { ArrowNarrowRight } from "./icons";
 import { fetchDailyJournals } from "../services/notion/fetchDailyJournals";
 import { VisualAccent } from "./VisualAccent";
 
@@ -22,9 +21,10 @@ export async function NulisAjaDulu() {
             const day = String(createdDate.getDate()).padStart(2, "0");
 
             return (
-              <div
+              <Link
                 key={journal.pageId}
-                className="bg-light-green p-4 sm:p-8 rounded-3xl flex flex-col sm:flex-row gap-2 sm:gap-8 items-start"
+                href="#"
+                className="bg-light-green/60 hover:bg-light-green p-4 sm:p-8 rounded-3xl flex flex-col sm:flex-row gap-2 sm:gap-8 items-start ease-[--ease-silky] active:scale-[99.25%] transition-transform duration-150"
               >
                 <p className="text-secondary-green italic font-bold text-right text-sm/normal sm:text-base/[1] tracking-tight sm:mt-1">
                   <span className="sm:text-[28px] sm:tracking-[-1.5px]">
@@ -40,20 +40,11 @@ export async function NulisAjaDulu() {
                   <h3 className="w-fit font-bold text-xl/tight sm:text-[28px]/tight mb-2">
                     {journal.name}
                   </h3>
-                  <p className="font-medium text-base/normal sm:text-xl/normal text-secondary-black mb-5 line-clamp-2">
+                  <p className="font-medium text-base/normal sm:text-xl/normal text-secondary-black line-clamp-2">
                     {journal.excerpt}
                   </p>
-                  <Link
-                    href="#"
-                    className="text-primary-green-lighter w-fit ml-auto flex items-center gap-0.5 hover:text-primary-green hover:[&_svg]:translate-x-0.5 active:[&_svg]:translate-x-0"
-                  >
-                    <p className="font-bold text-base/[20px] sm:text-[18px]/[24px]">
-                      Lanjut Baca
-                    </p>
-                    <ArrowNarrowRight className="size-5 sm:size-6 stroke-[2.5] transition-transform duration-400 ease-(--ease-lazy) mt-0.5" />
-                  </Link>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>
