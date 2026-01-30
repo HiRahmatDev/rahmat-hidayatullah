@@ -15,7 +15,7 @@ export function Footer() {
           </p>
           <Socials />
         </div>
-        <p className="font-medium text-primary-black/80 text-sm/normal text-left sm:text-right">
+        <p className="font-medium text-primary-black/60 text-sm/normal text-left sm:text-right">
           Hasil ngopinya Rahmat selama{" "}
           <DynamicElapsedTime startDate={new Date(SINCE_DATE)} />
           <br />#<em>NulisAjaDulu</em>

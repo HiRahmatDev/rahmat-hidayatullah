@@ -66,6 +66,10 @@
   --font-sans: var(--font-plus-jakarta-sans);
 }
 
+::selection {
+  @apply bg-primary-green/15;
+}
+
 body {
   @apply bg-primary-white text-primary-black font-sans;
 }
