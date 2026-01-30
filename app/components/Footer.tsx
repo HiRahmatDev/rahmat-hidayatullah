@@ -13,7 +13,7 @@ export function Footer({ inReadingMode = false }: FooterProps) {
       <div
         className={
           (inReadingMode ? "max-w-204" : "max-w-300") +
-          " mx-auto px-4 sm:px-12 pt-10 pb-10 sm:pb-20 overflow-hidden flex flex-col sm:flex-row gap-8 sm:gap-0 items-start sm:items-end justify-between"
+          " mx-auto px-6 sm:px-12 pt-10 pb-10 sm:pb-20 overflow-hidden flex flex-col sm:flex-row gap-8 sm:gap-0 items-start sm:items-end justify-between"
         }
       >
         <div>

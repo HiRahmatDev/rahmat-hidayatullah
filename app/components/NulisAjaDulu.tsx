@@ -8,12 +8,12 @@ export async function NulisAjaDulu() {
 
   return (
     <section>
-      <div className="max-w-300 mx-auto px-4 sm:px-12 pt-10 sm:pt-14 lg:pt-28.5 pb-14 sm:pb-20 lg:pb-30">
+      <div className="max-w-300 mx-auto px-6 sm:px-12 pt-10 sm:pt-14 lg:pt-28.5 pb-14 sm:pb-20 lg:pb-30">
         <VisualAccent variant="secondary" />
         <p className="text-[28px]/normal sm:text-4xl/normal -tracking-[.1px] font-bold mt-3 sm:mt-4 mb-6 sm:mb-8">
           <em className="text-primary-green">Nulis</em> aja dulu.
         </p>
-        <div className="space-y-4">
+        <div className="space-y-4 -mx-3">
           {journals.map((journal) => {
             const createdDate = new Date(journal.createdTime);
             const year = createdDate.getFullYear();

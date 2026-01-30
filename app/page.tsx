@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <main>
       <section className="bg-light-green">
-        <div className="max-w-300 mx-auto px-4 sm:px-12 pt-10 sm:pt-14 lg:pt-28.5 pb-11 sm:pb-20 lg:pb-30 overflow-hidden">
-          <h1 className="text-[57px]/[0.9] sm:text-[96px]/[0.9] lg:text-9xl/[0.9] 2xl:text-[150px]/[0.88] tracking-tight 2xl:tracking-[-0.03em] font-bold text-primary-green -ml-2 sm:-ml-4 lg:-ml-6 xl:-ml-8 mb-7.5 sm:mb-15 lg:mb-18.5">
+        <div className="max-w-300 mx-auto px-6 sm:px-12 pt-10 sm:pt-14 lg:pt-28.5 pb-11 sm:pb-20 lg:pb-30 overflow-hidden">
+          <h1 className="text-[57px]/[0.9] sm:text-[96px]/[0.9] lg:text-9xl/[0.9] 2xl:text-[150px]/[0.88] tracking-tight 2xl:tracking-[-0.03em] font-bold text-primary-green -ml-3 sm:-ml-4 lg:-ml-6 xl:-ml-8 mb-7.5 sm:mb-15 lg:mb-18.5">
             Rahmat
             <br />{" "}
             <span className="text-secondary-green ml-2 sm:ml-4 lg:ml-5 2xl:ml-6">
