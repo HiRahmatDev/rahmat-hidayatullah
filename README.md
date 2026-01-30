@@ -1,4 +1,4 @@
-# rahmathidayatullah.com – Personal Blog & Journal
+# rahmathidayatullah.vercel.app – Personal Blog & Journal
 
 Website ini adalah jurnal pribadi. Situs ini menjadi wadah untuk menyimpan cerita sederhana, catatan tentang hidup, dan eksplorasi tentang apa saja.
 
