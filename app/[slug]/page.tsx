@@ -32,9 +32,9 @@ export default async function DetailPage({ params }: DetailPageProps) {
         <div className="max-w-204 mx-auto px-7 sm:px-12 pt-8 pb-6 sm:py-10">
           <Link
             href="/"
-            className="inline-flex items-center gap-1 mb-8 text-sm/[24px] sm:text-base/[24px] font-bold text-primary-green-lighter hover:text-primary-green active:scale-95 transition-transform ease-[--ease-silky] duration-150"
+            className="inline-flex items-center gap-1 mb-8 text-sm/[24px] sm:text-base/[24px] font-bold text-primary-green-lighter hover:text-primary-green hover:[&>svg]:-translate-x-0.5 active:[&>svg]:translate-x-0"
           >
-            <ArrowLeft className="size-4.5 sm:size-5 stroke-[2.5]" />
+            <ArrowLeft className="size-4.5 sm:size-5 stroke-[2.5] transition-transform duration-400 ease-(--ease-lazy)" />
             Kembali
           </Link>
           <VisualAccent />

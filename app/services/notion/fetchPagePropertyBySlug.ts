@@ -14,7 +14,12 @@ export async function fetchPagePropertyBySlug(
   const response = await notion.dataSources.query({
     data_source_id: process.env.DATA_SOURCE_JOURNAL_ID!,
     filter_properties: ["Nama", "Kutipan", "Dibuat"],
-    filter: { property: "Slug", url: { equals: slug } },
+    filter: {
+      and: [
+        { property: "Tag", multi_select: { contains: "Harian" } },
+        { property: "Slug", url: { equals: slug } },
+      ],
+    },
     sorts: [{ property: "Dibuat", direction: "descending" }],
   });
 

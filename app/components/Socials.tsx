@@ -2,7 +2,7 @@ import { Youtube, Instagram, Whatsapp } from "./icons";
 import { SOCIAL_LINKS } from "@/config/constants";
 
 const SOCIAL_LINK_CLASS =
-  "p-1 select-none active:scale-90 transition-transform ease-[--ease-silky] duration-200 hover:[&_svg]:text-primary-green [&_svg]:transition-colors [&_svg]:duration-100";
+  "p-1 select-none active:scale-90 transition-transform ease-(--ease-silky) duration-200 hover:[&_svg]:text-primary-green [&_svg]:transition-colors [&_svg]:duration-100";
 
 export function Socials() {
   return (
