@@ -10,13 +10,13 @@ export function ImageBlock({ block }: { block: ImageBlockObjectResponse }) {
   }
 
   return (
-    <figure className="mb-8 sm:mb-9 w-fit -mx-7 sm:mx-0">
+    <figure className="mb-8 sm:mb-9 w-fit">
       <Image
         src={src}
         width={720}
         height={720}
         alt={caption || ""}
-        className="sm:rounded-2xl"
+        className="rounded-xl sm:rounded-2xl"
       />
       {caption && (
         <figcaption className="mt-4 text-xs text-center text-primary-black/65 font-medium">
