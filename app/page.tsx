@@ -22,7 +22,7 @@ export default function Home() {
             </span>
           </h1>
           <div className="flex flex-col-reverse lg:flex-row items-end lg:items-center gap-6 sm:gap-10 lg:gap-16">
-            <div className="flex flex-col items-end lg:items-start shrink-0 sm:w-131.75 lg:w-103.25 text-right lg:text-left">
+            <div className="flex flex-col items-end lg:items-start shrink-0 sm:w-132 lg:w-103.25 text-right lg:text-left">
               <VisualAccent />
               <p className="text-primary-green text-base/normal sm:text-2xl/normal font-semibold mt-3 sm:mt-4 mb-4 sm:mb-8">
                 Cerita sederhana, secangkir kopi, dan catatan kecil tentang

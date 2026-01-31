@@ -40,7 +40,7 @@ export async function NulisAjaDulu() {
                   <h3 className="w-fit font-bold text-lg/tight sm:text-2xl/tight mb-1 sm:mb-1.5">
                     {journal.name}
                   </h3>
-                  <p className="text-base/normal sm:text-xl/normal text-primary-black/75 line-clamp-2">
+                  <p className="text-base/normal sm:text-xl/normal text-primary-black/65 line-clamp-2">
                     {journal.excerpt}
                   </p>
                 </div>
