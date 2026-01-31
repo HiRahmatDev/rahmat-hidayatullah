@@ -7,6 +7,7 @@ import { CodeBlock } from "./common/CodeBlock";
 import { Heading1 } from "./common/Heading1";
 import { Heading2 } from "./common/Heading2";
 import { Heading3 } from "./common/Heading3";
+import { ImageBlock } from "./common/ImageBlock";
 import { isBlockObjectResponse } from "./utils";
 import { Paragraph } from "./common/Paragraph";
 
@@ -20,7 +21,8 @@ export function NotionRenderer({ listBlockChildren }: NotionRendererProps) {
     <div className="[&>h1,&>h2,&>h3]:scroll-mt-20">
       {listBlockChildren.results.map((block, index) => {
         if (isBlockObjectResponse(block)) {
-          switch (block?.type) {
+          console.log(block.type, block);
+          switch (block.type) {
             case "heading_1":
               return <Heading1 key={block.id} block={block} />;
 
@@ -50,6 +52,9 @@ export function NotionRenderer({ listBlockChildren }: NotionRendererProps) {
 
             case "callout":
               return <Callout key={block.id} block={block} />;
+
+            case "image":
+              return <ImageBlock key={block.id} block={block} />;
 
             default:
               return null;
