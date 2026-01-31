@@ -5,7 +5,7 @@ export default function NotFound() {
   return (
     <main className="min-h-screen flex flex-col">
       <section className="bg-primary-white flex-1 flex flex-col">
-        <div className="max-w-300 mx-auto px-4 sm:px-12 pt-10 sm:pt-14 lg:pt-28.5 pb-11 sm:pb-20 lg:pb-30 flex-1 flex flex-col justify-center">
+        <div className="max-w-300 mx-auto px-7 sm:px-12 pt-10 sm:pt-14 lg:pt-28.5 pb-11 sm:pb-20 lg:pb-30 flex-1 flex flex-col justify-center">
           <div className="max-w-4xl mx-auto lg:mx-0">
             <h1 className="text-[96px]/[0.9] sm:text-[120px]/[0.9] lg:text-[150px]/[0.9] tracking-tight font-bold text-secondary-green mb-6">
               404
