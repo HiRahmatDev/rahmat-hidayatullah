@@ -26,7 +26,6 @@ export const metadata: Metadata = {
     description,
     siteName: "Rahmat Hidayatullah",
     url: "/",
-    images: "/opengraph-image.png",
     locale: "id",
     type: "profile",
   },
