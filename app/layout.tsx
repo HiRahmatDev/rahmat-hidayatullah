@@ -14,10 +14,22 @@ const robotoMono = Roboto_Mono({
   subsets: ["latin"],
 });
 
+const title = `Rahmat Hidayatullah | Nulis aja dulu`;
+const description = `Cerita sederhana, secangkir kopi, dan catatan kecil tentang hidup yang layak disimpan.`;
+const bodyClassName = `${plusJakartaSans.variable} ${robotoMono.variable} antialiased`;
+
 export const metadata: Metadata = {
-  title: "Rahmat Hidayatullah | Nulis aja dulu",
-  description:
-    "Cerita sederhana, secangkir kopi, dan catatan kecil tentang hidup yang layak disimpan.",
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    siteName: "Rahmat Hidayatullah",
+    url: "/",
+    images: "/opengraph-image.png",
+    locale: "id",
+    type: "profile",
+  },
 };
 
 export default function RootLayout({
@@ -27,11 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id">
-      <body
-        className={`${plusJakartaSans.variable} ${robotoMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={bodyClassName}>{children}</body>
     </html>
   );
 }

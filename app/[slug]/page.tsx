@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 
@@ -20,6 +21,30 @@ export async function generateStaticParams() {
   return journals.map((journal) => ({
     slug: journal.slug,
   }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const property = await fetchPagePropertyBySlug(slug);
+
+  const title = `${property?.name || ""} | Rahmat Hidayatullah`;
+  const description = `${property?.excerpt || ""}`;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      siteName: "Rahmat Hidayatullah",
+      url: `/${slug}`,
+      type: "article",
+    },
+  };
 }
 
 export default async function DetailPage({ params }: DetailPageProps) {
