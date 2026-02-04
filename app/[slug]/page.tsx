@@ -8,6 +8,7 @@ import { fetchPagePropertyBySlug } from "@/services/notion/fetchPagePropertyBySl
 import { Footer } from "@/components/Footer";
 import { notion } from "@/services/notion";
 import { NotionRenderer } from "@/components/NotionRenderer";
+import { SITE_NAME } from "@/config/constants";
 import { VisualAccent } from "@/components/VisualAccent";
 
 interface DetailPageProps {
@@ -31,7 +32,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const property = await fetchPagePropertyBySlug(slug);
 
-  const title = `${property?.name || ""} | Rahmat Hidayatullah`;
+  const title = `${property?.name || ""} | Tulisan ${SITE_NAME}`;
   const description = `${property?.excerpt || ""}`;
 
   return {
@@ -40,7 +41,7 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      siteName: "Rahmat Hidayatullah",
+      siteName: `Tulisan ${SITE_NAME}`,
       url: `/${slug}`,
       type: "article",
     },

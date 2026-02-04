@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Roboto_Mono } from "next/font/google";
+
+import { SITE_NAME, SITE_URL } from "./config/constants";
 import "./globals.css";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -14,17 +16,18 @@ const robotoMono = Roboto_Mono({
   subsets: ["latin"],
 });
 
-const title = `Rahmat Hidayatullah | Nulis aja dulu`;
+const title = `${SITE_NAME} | Nulis aja dulu`;
 const description = `Cerita sederhana, secangkir kopi, dan catatan kecil tentang hidup yang layak disimpan.`;
 const bodyClassName = `${plusJakartaSans.variable} ${robotoMono.variable} antialiased`;
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title,
   description,
   openGraph: {
     title,
     description,
-    siteName: "Rahmat Hidayatullah",
+    siteName: SITE_NAME,
     url: "/",
     locale: "id",
     type: "profile",
