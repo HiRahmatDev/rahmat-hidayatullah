@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.1](https://github.com/HiRahmatDev/rahmat-hidayatullah/compare/v0.1.0...v0.1.1) (2026-02-04)
+
+### 🔨 Changed
+
+* update sitename and og:url in metadata ([6a153ff](https://github.com/HiRahmatDev/rahmat-hidayatullah/commit/6a153fff4a125a0bc9a47c5d2f7def278d65617f))
+
 ## 0.1.0 (2026-02-04)
 
 ### ✨ Added
