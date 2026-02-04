@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 
 import { ArrowLeft } from "@/components/icons";
+import { fetchDailyJournals } from "@/services/notion/fetchDailyJournals";
 import { fetchPagePropertyBySlug } from "@/services/notion/fetchPagePropertyBySlug";
 import { Footer } from "@/components/Footer";
 import { notion } from "@/services/notion";
@@ -13,6 +14,13 @@ interface DetailPageProps {
 }
 
 export const revalidate = 60;
+
+export async function generateStaticParams() {
+  const journals = await fetchDailyJournals();
+  return journals.map((journal) => ({
+    slug: journal.slug,
+  }));
+}
 
 export default async function DetailPage({ params }: DetailPageProps) {
   const { slug } = await params;
