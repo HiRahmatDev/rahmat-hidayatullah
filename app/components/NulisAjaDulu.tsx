@@ -37,7 +37,7 @@ export async function NulisAjaDulu() {
                   </span>
                 </p>
                 <div className="flex-1">
-                  <h3 className="w-fit font-bold text-lg/tight sm:text-2xl/tight mb-1 sm:mb-1.5">
+                  <h3 className="w-fit font-bold text-lg/normal sm:text-2xl/normal mb-2 sm:mb-2.5">
                     {journal.name}
                   </h3>
                   <p className="text-base/normal sm:text-xl/normal text-primary-black/65 line-clamp-2">

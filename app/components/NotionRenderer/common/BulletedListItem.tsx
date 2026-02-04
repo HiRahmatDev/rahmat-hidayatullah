@@ -36,7 +36,7 @@ export function BulletedListItem({
   }
 
   return (
-    <ul className="list-disc pl-8 mb-7 text-[16.5px]/[1.75] sm:text-lg/[1.75] ">
+    <ul className="list-disc pl-8 mb-7 text-[16.5px]/[1.8] sm:text-lg/[1.75] ">
       {items.map((it) => (
         <li key={it.id}>
           <RichText items={it.bulleted_list_item.rich_text} />

@@ -38,7 +38,7 @@ export default async function DetailPage({ params }: DetailPageProps) {
             Kembali
           </Link>
           <VisualAccent />
-          <h1 className="mt-3 mb-2 text-3xl sm:text-4xl font-bold tracking-tight">
+          <h1 className="mt-3 mb-3 text-3xl sm:text-4xl font-bold">
             {property.name}
           </h1>
           <p className="text-[16.5px] sm:text-lg text-primary-black/65">
