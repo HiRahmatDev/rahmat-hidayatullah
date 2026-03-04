@@ -40,9 +40,9 @@ export async function fetchPagePropertyBySlug(
       : "";
 
   const createdTime =
-    result.properties.Dibuat.type === "created_time"
-      ? result.properties.Dibuat.created_time
+    result.properties.Dibuat.type === "date"
+      ? result.properties.Dibuat.date?.start
       : "";
 
-  return { blockId: result.id, name, excerpt, createdTime };
+  return { blockId: result.id, name, excerpt, createdTime: createdTime! };
 }

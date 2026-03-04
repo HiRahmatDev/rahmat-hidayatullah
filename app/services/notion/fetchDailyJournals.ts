@@ -34,15 +34,23 @@ export async function fetchDailyJournals(): Promise<DailyJournal[]> {
         ? page.properties.Kutipan.rich_text.map((t) => t.plain_text).join("")
         : "";
 
+    console.log("Dibuat", page.properties.Dibuat);
+
     const createdTime =
-      page.properties.Dibuat.type === "created_time"
-        ? page.properties.Dibuat.created_time
+      page.properties.Dibuat.type === "date"
+        ? page.properties.Dibuat.date?.start
         : "";
 
     const slug =
       page.properties.Slug.type === "url" ? page.properties.Slug.url || "" : "";
 
-    results.push({ pageId: page.id, name, excerpt, createdTime, slug });
+    results.push({
+      pageId: page.id,
+      name,
+      excerpt,
+      createdTime: createdTime!,
+      slug,
+    });
   }
 
   return results;
