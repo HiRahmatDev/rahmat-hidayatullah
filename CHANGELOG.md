@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/HiRahmatDev/rahmat-hidayatullah/compare/v0.1.1...v0.1.2) (2026-03-04)
+
+### 🔨 Changed
+
+* implement proxy image API and update ImageBlock component to use it ([dcf4eeb](https://github.com/HiRahmatDev/rahmat-hidayatullah/commit/dcf4eeb797d0166d0833fd836e87cf9f0c82e59d))
+* update date handling for createdTime in fetchDailyJournals and fetchPagePropertyBySlug functions ([21be652](https://github.com/HiRahmatDev/rahmat-hidayatullah/commit/21be6529f657c1424a7330beaeba591e0b235eee))
+
 ## [0.1.1](https://github.com/HiRahmatDev/rahmat-hidayatullah/compare/v0.1.0...v0.1.1) (2026-02-04)
 
 ### 🔨 Changed
