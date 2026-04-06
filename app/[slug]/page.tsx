@@ -80,7 +80,7 @@ export default async function DetailPage({ params }: DetailPageProps) {
           </p>
           <div className="mt-4">
             <p className="text-sm font-semibold text-primary-black/40">
-              {formatDate(property.createdTime)}
+              {formatDate(property.publishedTime)}
             </p>
           </div>
         </div>

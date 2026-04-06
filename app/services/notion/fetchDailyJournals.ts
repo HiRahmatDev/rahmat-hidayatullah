@@ -5,16 +5,22 @@ interface DailyJournal {
   pageId: string;
   name: string;
   excerpt: string;
-  createdTime: string;
+  publishedTime: string;
   slug: string;
 }
 
 export async function fetchDailyJournals(): Promise<DailyJournal[]> {
   const response = await notion.dataSources.query({
     data_source_id: process.env.DATA_SOURCE_JOURNAL_ID!,
-    filter_properties: ["Nama", "Kutipan", "Dibuat", "Slug"],
-    filter: { property: "Tag", multi_select: { contains: "Harian" } },
-    sorts: [{ property: "Dibuat", direction: "descending" }],
+    filter_properties: ["Nama", "Kutipan", "Slug", "Published time"],
+    filter: {
+      and: [
+        { property: "Tag", multi_select: { contains: "Harian" } },
+        { property: "Published time", date: { is_not_empty: true } },
+        { property: "Slug", url: { is_not_empty: true } },
+      ],
+    },
+    sorts: [{ property: "Published time", direction: "descending" }],
   });
 
   const results: DailyJournal[] = [];
@@ -34,11 +40,9 @@ export async function fetchDailyJournals(): Promise<DailyJournal[]> {
         ? page.properties.Kutipan.rich_text.map((t) => t.plain_text).join("")
         : "";
 
-    console.log("Dibuat", page.properties.Dibuat);
-
-    const createdTime =
-      page.properties.Dibuat.type === "date"
-        ? page.properties.Dibuat.date?.start
+    const publishedTime =
+      page.properties["Published time"].type === "date"
+        ? page.properties["Published time"].date?.start || ""
         : "";
 
     const slug =
@@ -48,7 +52,7 @@ export async function fetchDailyJournals(): Promise<DailyJournal[]> {
       pageId: page.id,
       name,
       excerpt,
-      createdTime: createdTime!,
+      publishedTime,
       slug,
     });
   }

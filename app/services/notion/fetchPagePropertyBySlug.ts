@@ -5,7 +5,7 @@ interface PageProperty {
   blockId: string;
   name: string;
   excerpt: string;
-  createdTime: string;
+  publishedTime: string;
 }
 
 export async function fetchPagePropertyBySlug(
@@ -13,14 +13,15 @@ export async function fetchPagePropertyBySlug(
 ): Promise<PageProperty | null> {
   const response = await notion.dataSources.query({
     data_source_id: process.env.DATA_SOURCE_JOURNAL_ID!,
-    filter_properties: ["Nama", "Kutipan", "Dibuat"],
+    filter_properties: ["Nama", "Kutipan", "Published time"],
     filter: {
       and: [
         { property: "Tag", multi_select: { contains: "Harian" } },
+        { property: "Published time", date: { is_not_empty: true } },
         { property: "Slug", url: { equals: slug } },
       ],
     },
-    sorts: [{ property: "Dibuat", direction: "descending" }],
+    sorts: [{ property: "Published time", direction: "descending" }],
   });
 
   const result = response.results?.[0];
@@ -39,10 +40,10 @@ export async function fetchPagePropertyBySlug(
       ? result.properties.Kutipan.rich_text.map((t) => t.plain_text).join("")
       : "";
 
-  const createdTime =
-    result.properties.Dibuat.type === "date"
-      ? result.properties.Dibuat.date?.start
+  const publishedTime =
+    result.properties["Published time"].type === "date"
+      ? result.properties["Published time"].date?.start || ""
       : "";
 
-  return { blockId: result.id, name, excerpt, createdTime: createdTime! };
+  return { blockId: result.id, name, excerpt, publishedTime };
 }
