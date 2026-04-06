@@ -1,5 +1,11 @@
 # Changelog
- 
+
+## [0.1.3](https://github.com/HiRahmatDev/rahmat-hidayatullah/compare/v0.1.2...v0.1.3) (2026-04-06)
+
+### 🔨 Changed
+
+* update indentifier of published article and display logic ([f347951](https://github.com/HiRahmatDev/rahmat-hidayatullah/commit/f3479516954605012b2894f1c4db476b567e5e53))
+
 ## [0.1.2](https://github.com/HiRahmatDev/rahmat-hidayatullah/compare/v0.1.1...v0.1.2) (2026-03-04)
 
 ### 🔨 Changed
