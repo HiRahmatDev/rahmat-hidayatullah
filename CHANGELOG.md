@@ -1,5 +1,11 @@
 # Changelog
- 
+
+## [0.1.4](https://github.com/HiRahmatDev/rahmat-hidayatullah/compare/v0.1.3...v0.1.4) (2026-04-15)
+
+### 🎨 Updated
+
+* update typography ([d4253c2](https://github.com/HiRahmatDev/rahmat-hidayatullah/commit/d4253c232e5764e873be9a25ed415114268666f2))
+
 ## [0.1.3](https://github.com/HiRahmatDev/rahmat-hidayatullah/compare/v0.1.2...v0.1.3) (2026-04-06)
 
 ### 🔨 Changed
