@@ -66,19 +66,19 @@ export default async function DetailPage({ params }: DetailPageProps) {
         <div className="max-w-204 mx-auto px-7 sm:px-12 pt-8 pb-6 sm:py-10">
           <Link
             href="/"
-            className="inline-flex items-center gap-1 mb-8 text-sm/[24px] sm:text-base/[24px] font-bold text-primary-green-lighter hover:text-primary-green hover:[&>svg]:-translate-x-0.5 active:[&>svg]:translate-x-0"
+            className="inline-flex items-center gap-2 mb-12 text-sm/[24px] sm:text-base/[24px] font-bold text-primary-green-lighter hover:text-primary-green active:[&>svg]:translate-x-0.5"
           >
             <ArrowLeft className="size-4.5 sm:size-5 stroke-[2.5] transition-transform duration-400 ease-(--ease-lazy)" />
             Kembali
           </Link>
           <VisualAccent />
-          <h1 className="mt-3 mb-3 text-3xl sm:text-4xl font-bold">
+          <h1 className="mt-4 mb-3 text-3xl sm:text-4xl font-bold text-primary-green">
             {property.name}
           </h1>
           <p className="text-[16.5px] sm:text-lg text-primary-black/65">
             {property.excerpt}
           </p>
-          <div className="mt-4">
+          <div className="mt-6">
             <p className="text-sm font-semibold text-primary-black/40">
               {formatDate(property.publishedTime)}
             </p>
@@ -86,7 +86,7 @@ export default async function DetailPage({ params }: DetailPageProps) {
         </div>
       </section>
       <article>
-        <div className="max-w-204 mx-auto px-7 sm:px-12 pt-6 sm:pt-10 pb-12 sm:pb-20">
+        <div className="max-w-204 mx-auto px-7 sm:px-12 pt-6 sm:pt-10 pb-12 sm:pb-20 text-primary-black/90">
           <NotionRenderer listBlockChildren={listBlockChildren} />
         </div>
       </article>
